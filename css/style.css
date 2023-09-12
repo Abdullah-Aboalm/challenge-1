@@ -1,0 +1,136 @@
+
+/* global rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* small screens */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium screens
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+} */
+
+/* large screens */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end global rules */
+
+/* start features */
+
+.cards {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cards .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.cards .container .card-1 {
+    background-color: orange;
+    padding: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.cards .container .card-2 {
+    background-color: rgb(40, 109, 121);
+    padding: 50px;
+}
+
+.cards .container .card-3 {
+    background-color: rgb(0, 69, 65);
+    padding: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media (max-width: 767px) {
+    .cards .container .card-1 {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .cards .container .card-3 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+}
+
+.cards .container img {
+    margin: 0 0 40px;
+
+}
+
+.cards .container p.name {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cards .container p.description {
+    text-transform: capitalize;
+    color: white;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.cards .container button {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+
+.cards .container .card-1 button {
+    color: orange;
+}
+
+.cards .container .card-2 button {
+    color:  rgb(40, 109, 121);
+}
+
+.cards .container .card-3 button {
+    color: rgb(0, 69, 65);
+}  
+
+/* end features */
